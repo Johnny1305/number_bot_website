@@ -77,3 +77,10 @@
     }
   }
   
+  /* Agrega estos estilos al archivo CSS de tu proyecto */
+
+.bot-status {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}

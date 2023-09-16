@@ -19,6 +19,7 @@ const HomeContent = () => {
       <a href={inviteLink} target="_blank" rel="noopener noreferrer" className="invite-button">
         Invítame
       </a>
+      <p className="bot-status">Página Web y Bot en Desarrollo</p>
     </div>
   );
 };
