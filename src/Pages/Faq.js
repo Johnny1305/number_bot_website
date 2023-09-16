@@ -11,9 +11,9 @@ const FaQComponent = () => {
         "Number_Bot está en pleno desarrollo, por lo que esperamos que esté terminado a finales de 2024",
     },
     {
-      question: "¿Cómo puedo ayudar al desarrollo?",
+      question: "¿Puedo ayudar al desarrollo?",
       answer:
-        "En el menú de la izquierda en el apartado 'Contribución', mandanos un correo electrónico diciendo los conocimientos y como influiría en el desarrollo. Con eso nos pondremos en contacto con usted, para detallar la información.",
+        "Si. En el menú de la izquierda en el apartado 'Contribución', mandanos un correo electrónico diciendo los conocimientos y como influiría en el desarrollo. Con eso nos pondremos en contacto con usted, para detallar la información.",
     },
     // Agrega más preguntas frecuentes aquí
   ]);
