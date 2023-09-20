@@ -9,18 +9,46 @@ const CommandsComponent = () => {
 
     const commandCategories = [
         {
-            category: "Categoría 1",
+            category: "General",
             commands: [
-                { name: "Comando 1", description: "Explicación del Comando 1" },
-                { name: "Comando 2", description: "Explicación del Comando 2" },
-                { name: "Comando 3", description: "Explicación del Comando 3" },
+                { name: "/ping", description: "Muestra la latencia del Bot" },
+                { name: "/info", description: "Muestra los datos del Bot e Información del Desarrollador" },
+                { name: "/userinfo", description: "Muestra información detallada del usuario" },
+                { name: "/invite", description: "Obtén un enlace para invitar al bot a tu servidor" },
+                { name: "/cualesmiip", description: "Muestra la dirección IP pública del usuario. (Mensaje Personal)" },
+                { name: "-avatar", description: "Muestra la foto de perfil del usuario" }
             ],
         },
         {
-            category: "Categoría 2",
+            category: "Interactivos",
             commands: [
-                { name: "Comando 4", description: "Explicación del Comando 4" },
-                { name: "Comando 5", description: "Explicación del Comando 5" },
+                { name: "/hug", description: "Manda un abrazo a un usuario" },
+                { name: "/kiss", description: "Manda un beso a un usuario" },
+            ],
+        },
+        {
+            category: "Administrador",
+            commands: [
+                { name: "/clear", description: "Muestra la latencia del Bot" }
+            ],
+        },
+        {
+            category: "Música",
+            commands: [
+                { name: "-play", description: "Reproduce una canción o una lista de reproducción" },
+                { name: "-exit", description: "Detiene la reproducción de música y desconecta al bot del canal de voz" },
+                { name: "-skip", description: "Salta a la siguiente canción en la lista de reproducción" },
+                { name: "-pause", description: "Pausa la reproducción de música" },
+                { name: "-resume", description: "Reanuda la canción que estaba pausada en la reproducción de música" },
+                { name: "-loop", description: "Activa o desactiva la repetición de la lista de reproducción" },
+                { name: "-queue", description: "Muestra la lista de reproducción actual" },
+                { name: "-volume", description: "Controla el volumen del bot durante la reproducción de música" }
+            ],
+        },
+        {
+            category: "Juegos",
+            commands: [
+                { name: "-dado", description: "Lanza un dado al azar" }
             ],
         },
     ];
