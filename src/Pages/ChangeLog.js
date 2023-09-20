@@ -58,14 +58,14 @@ const ChangelogComponent = () => {
                                     Se implementaron los siguientes nuevos comandos:
                                 </p>
                                 <ul>
-                                    <li>-play: Reproduce una canción o una lista de reproducción.</li>
-                                    <li>-skip: Salta a la siguiente canción en la lista de reproducción.</li>
-                                    <li>-stop: Detiene la reproducción de música y desconecta al bot del canal de voz.</li>
-                                    <li>-queue: Muestra la lista de reproducción actual.</li>
-                                    <li>-volume: Controla el volumen del bot durante la reproducción de música.</li>
-                                    <li>-resume: Reanuda la canción que estaba pausada en la reproducción de música.</li>
-                                    <li>-pause: Pausa la reproducción de música.</li>
-                                    <li>-loop: Activa o desactiva la repetición de la lista de reproducción.</li>
+                                    <li><code>-play</code>: Reproduce una canción o una lista de reproducción.</li>
+                                    <li><code>-skip</code>: Salta a la siguiente canción en la lista de reproducción.</li>
+                                    <li><code>-stop</code>: Detiene la reproducción de música y desconecta al bot del canal de voz.</li>
+                                    <li><code>-queue</code>: Muestra la lista de reproducción actual.</li>
+                                    <li><code>-volume</code>: Controla el volumen del bot durante la reproducción de música.</li>
+                                    <li><code>-resume</code>: Reanuda la canción que estaba pausada en la reproducción de música.</li>
+                                    <li><code>-pause</code>: Pausa la reproducción de música.</li>
+                                    <li><code>-loop</code>: Activa o desactiva la repetición de la lista de reproducción.</li>
                                 </ul>
                                 <p>Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.</p>
                             </div>
