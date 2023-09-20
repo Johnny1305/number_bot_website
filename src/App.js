@@ -5,6 +5,7 @@ import Team from "./Pages/Team";
 import Calender from "./Pages/Calender";
 import Developer from "./Pages/Developer";
 import Faq from "./Pages/Faq";
+import Commands from "./Pages/Commands";
 import Documents from "./Pages/Documents";
 import Projects from "./Pages/Projects";
 import styled from "styled-components";
@@ -38,6 +39,7 @@ function App() {
             <Route path="/calender" component={Calender} />
             <Route path="/developer" component={Developer} />
             <Route path="/faq" component={Faq} />
+            <Route path="/commands" component={Commands} />
             <Route path="/documents" component={Documents} />
             <Route path="/projects" component={Projects} />
           </Switch>
