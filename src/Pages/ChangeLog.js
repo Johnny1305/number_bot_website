@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MotionHoc from "./MotionHoc";
-import "./Changelog.css"; // Importa los estilos CSS
+import "../css/Changelog.css"; // Importa los estilos CSS
 
 const ChangelogComponent = () => {
     const [activeTab, setActiveTab] = useState("tab-0.4.0");
