@@ -4,8 +4,8 @@ h1 {
 
 /* Contenedor del changelog con desplazamiento vertical */
 .changelog-container {
-    max-height: 400px; /* Ajusta la altura máxima según tu preferencia */
-    overflow-y: auto;
+    max-height: 400px;
+    overflow-y: scroll;
 }
 
 /* Estilos para cada entrada del registro de cambios */
