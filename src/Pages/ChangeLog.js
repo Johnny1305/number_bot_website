@@ -23,7 +23,7 @@ const ChangelogComponent = () => {
                         <li>Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.</li>
                     </ul>
                 </div>
-
+                <br></br>
                 <div className="changelog">
                     <h2>Versión 0.3.0 (2023-09-15)</h2>
                     <ul>
@@ -40,7 +40,7 @@ const ChangelogComponent = () => {
                         <li>Se ha agregado un cooldown al comando /changelog para evitar un uso excesivo de este comando.</li>
                     </ul>
                 </div>
-
+                <br></br>
                 <div className="changelog">
                     <h2>Versión 0.2.0 (2023-09-14)</h2>
                     <ul>
@@ -55,7 +55,7 @@ const ChangelogComponent = () => {
                         <li>Se añadió la nueva página web del bot en https://lnkd.in/dSgPp64y.</li>
                     </ul>
                 </div>
-
+                <br></br>
                 <div className="changelog">
                     <h2>Versión 0.1.0 (2023-09-11)</h2>
                     <ul>
