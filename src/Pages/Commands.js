@@ -89,7 +89,7 @@ const CommandsComponent = () => {
             </div>
 
             {/* Contenedor con desplazamiento vertical */}
-            <div className="category-grid" style={{ maxHeight: "400px", overflowY: "auto" }}>
+            <div className="category-grid" style={{ maxHeight: "450px", overflowY: "auto" }}>
                 {(activeCategory === null
                     ? commandCategories
                     : activeCategory === "Todas"
