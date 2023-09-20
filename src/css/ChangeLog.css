@@ -2,6 +2,12 @@ h1 {
     text-align: center;
 }
 
+/* Contenedor del changelog con desplazamiento vertical */
+.changelog-container {
+    max-height: 400px; /* Ajusta la altura máxima según tu preferencia */
+    overflow-y: auto;
+}
+
 /* Estilos para cada entrada del registro de cambios */
 .changelog {
     border: 1px solid #ddd;
