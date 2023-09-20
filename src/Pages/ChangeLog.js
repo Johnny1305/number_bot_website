@@ -3,11 +3,31 @@ import MotionHoc from "./MotionHoc";
 
 const ChangelogComponent = () => {
     return (
-        <div>
+        <div className="changelog-page">
             <h1>Registro de Cambios</h1>
+
             <div className="changelog-container">
+                {/* Índice de versiones (a la izquierda) */}
+                <div className="version-index">
+                    <ul>
+                        <li>
+                            <a href="#version-0.4.0">Versión 0.4.0</a>
+                        </li>
+                        <li>
+                            <a href="#version-0.3.0">Versión 0.3.0</a>
+                        </li>
+                        <li>
+                            <a href="#version-0.2.0">Versión 0.2.0</a>
+                        </li>
+                        <li>
+                            <a href="#version-0.1.0">Versión 0.1.0</a>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Contenido de cada versión (a la derecha) */}
                 <div className="changelog">
-                    <h2>Versión 0.4.0 (2023-09-18)</h2>
+                    <h2 id="version-0.4.0">Versión 0.4.0 (2023-09-18)</h2>
                     <ul>
                         <li>Se implementaron los siguientes nuevos comandos:</li>
                         <ul>
@@ -23,9 +43,9 @@ const ChangelogComponent = () => {
                         <li>Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.</li>
                     </ul>
                 </div>
-                <br></br>
+
                 <div className="changelog">
-                    <h2>Versión 0.3.0 (2023-09-15)</h2>
+                    <h2 id="version-0.3.0">Versión 0.3.0 (2023-09-15)</h2>
                     <ul>
                         <li>Se implementaron los siguientes nuevos comandos:</li>
                         <ul>
@@ -40,9 +60,9 @@ const ChangelogComponent = () => {
                         <li>Se ha agregado un cooldown al comando /changelog para evitar un uso excesivo de este comando.</li>
                     </ul>
                 </div>
-                <br></br>
+
                 <div className="changelog">
-                    <h2>Versión 0.2.0 (2023-09-14)</h2>
+                    <h2 id="version-0.2.0">Versión 0.2.0 (2023-09-14)</h2>
                     <ul>
                         <li>Se implementaron los siguientes nuevos comandos:</li>
                         <ul>
@@ -55,9 +75,9 @@ const ChangelogComponent = () => {
                         <li>Se añadió la nueva página web del bot en https://lnkd.in/dSgPp64y.</li>
                     </ul>
                 </div>
-                <br></br>
+
                 <div className="changelog">
-                    <h2>Versión 0.1.0 (2023-09-11)</h2>
+                    <h2 id="version-0.1.0">Versión 0.1.0 (2023-09-11)</h2>
                     <ul>
                         <li>Lanzamiento inicial del bot.</li>
                         <li>Se agregaron comandos básicos:</li>
