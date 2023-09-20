@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import MotionHoc from "./MotionHoc";
 
 const ChangelogComponent = () => {
+    const [activeVersion, setActiveVersion] = useState("version-0.4.0");
+
+    const handleVersionClick = (versionId) => {
+        setActiveVersion(versionId);
+    };
+
     return (
         <div className="changelog-page">
             <h1>Registro de Cambios</h1>
@@ -11,16 +17,36 @@ const ChangelogComponent = () => {
                 <div className="version-index">
                     <ul>
                         <li>
-                            <a href="#version-0.4.0">Versión 0.4.0</a>
+                            <button
+                                onClick={() => handleVersionClick("version-0.4.0")}
+                                className={activeVersion === "version-0.4.0" ? "active" : ""}
+                            >
+                                Versión 0.4.0
+                            </button>
                         </li>
                         <li>
-                            <a href="#version-0.3.0">Versión 0.3.0</a>
+                            <button
+                                onClick={() => handleVersionClick("version-0.3.0")}
+                                className={activeVersion === "version-0.3.0" ? "active" : ""}
+                            >
+                                Versión 0.3.0
+                            </button>
                         </li>
                         <li>
-                            <a href="#version-0.2.0">Versión 0.2.0</a>
+                            <button
+                                onClick={() => handleVersionClick("version-0.2.0")}
+                                className={activeVersion === "version-0.2.0" ? "active" : ""}
+                            >
+                                Versión 0.2.0
+                            </button>
                         </li>
                         <li>
-                            <a href="#version-0.1.0">Versión 0.1.0</a>
+                            <button
+                                onClick={() => handleVersionClick("version-0.1.0")}
+                                className={activeVersion === "version-0.1.0" ? "active" : ""}
+                            >
+                                Versión 0.1.0
+                            </button>
                         </li>
                     </ul>
                 </div>
