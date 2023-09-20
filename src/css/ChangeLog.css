@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+/* Estilos para cada entrada del registro de cambios */
+.changelog {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.changelog h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.changelog ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.changelog li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

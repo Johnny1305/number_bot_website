@@ -8,6 +8,7 @@ import Calender from "../assets/sceduled.svg";
 import Developer from "../assets/important.svg";
 import Faq from "../assets/social.svg";
 import Commands from "../assets/terminal.svg";
+import ChangeLog from "../assets/change.svg";
 import Projects from "../assets/starred.svg";
 import Documents from "../assets/draft.svg";
 import PowerOff from "../assets/power-off-solid.svg";
@@ -286,6 +287,14 @@ const Sidebar = () => {
           >
             <img src={Faq} alt="Calender" />
             <Text clicked={click}>FaQ</Text>
+          </Item>
+          <Item
+            onClick={() => setClick(false)}
+            activeClassName="active"
+            to="/changelog"
+          >
+            <img src={ChangeLog} alt="Calender" />
+            <Text clicked={click}>Registros</Text>
           </Item>
           {/*<Item
             onClick={() => setClick(false)}
