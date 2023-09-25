@@ -4,6 +4,20 @@
 
 ## Registro de Cambios
 
+### Versión 0.4.0 (2023-09-20)
+
+- Se implementaron los siguientes nuevos comandos:
+  - `-play`: Reproduce una canción o una lista de reproducción.
+  - `-skip`: Salta a la siguiente canción en la lista de reproducción.
+  - `-exit`: Detiene la reproducción de música y desconecta al bot del canal de voz.
+  - `-queue`: Muestra la lista de reproducción actual.
+  - `-volume`: Controla el volumen del bot durante la reproducción de música.
+  - `-resume`: Reanuda la canción que estaba pausada en la reproducción de música.
+  - `-pause`: Pausa la reproducción de música.
+  - `-loop`: Activa o desactiva la repetición de la lista de reproducción.
+- Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.
+> **NOTA**: El Bot no se va a cambiar de canal cuando está reproduciendo música.
+
 ### Versión 0.3.0 (2023-09-15)
 
 - Se implementaron los siguientes nuevos comandos:
