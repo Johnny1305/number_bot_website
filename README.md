@@ -25,7 +25,6 @@
   - `-avatar`: Muestra la foto de perfil del usuario
 - Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.
 - Se ha implementado una mejora en la seguridad del bot para proteger contra el acceso no autorizado por parte de desarrolladores no autorizados.
-- Se ha agregado un cooldown al comando `/changelog` para evitar un uso excesivo de este comando.
 
 ### Versión 0.2.0 (2023-09-14)
 - Se implementaron los siguientes nuevos comandos:
