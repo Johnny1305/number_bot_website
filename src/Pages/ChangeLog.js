@@ -69,7 +69,7 @@ const ChangelogComponent = () => {
                                         <li><code>/ban</code>: Banea a un miembro del Servidor en el que está unido.</li>
                                         <li><code>/unban</code>: Desbanea a un miembro del Servidor en el que está unido.</li>
                                     </ul>
-                                    <li>Se ha actualizado el comando <code>-play</code> para que el bot no se desplace de canal de voz en el que está conectado.</li>
+                                    <li>Se ha actualizado el comando <code>-play</code> para que el bot no se desplace de el canal de voz en el que está conectado.</li>
                                     <li>Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.</li>
                                 </ul>
                             </div>
