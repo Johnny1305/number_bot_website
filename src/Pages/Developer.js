@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MotionHoc from "./MotionHoc";
 import "../css/Developer.css"; // Asegúrate de ajustar la ruta a tu archivo CSS
 
 const DeveloperComponent = () => {
   const contactEmail = "jonathan.ramos.business@gmail.com"; // Reemplaza con tu dirección de correo electrónico
 
+  useEffect(() => {
+    const donacionesTitle = document.getElementById("donaciones-title");
+    const scrollableContent = document.querySelector(".scrollable-content");
+
+    const handleScroll = () => {
+      if (donacionesTitle && scrollableContent) {
+        const scrollPosition = scrollableContent.scrollTop;
+        if (scrollPosition > 0) {
+          donacionesTitle.classList.add("hidden-title");
+        } else {
+          donacionesTitle.classList.remove("hidden-title");
+        }
+      }
+    };
+
+    if (scrollableContent) {
+      scrollableContent.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (scrollableContent) {
+        scrollableContent.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
+
   return (
     <div className="developer-content">
-      <h1>Developer</h1>
+      <h1 className="developer-title">Developer</h1>
       <div className="scrollable-content">
         <p>
           ¡Gracias por tu interés en contribuir al desarrollo de Number_Bot! <br/> Si deseas colaborar, enviar sugerencias o informar sobre problemas, no dudes en ponerte en contacto con el equipo de desarrollo.
@@ -18,7 +44,7 @@ const DeveloperComponent = () => {
         <br/>
         <hr/>
     
-        <h1>Donaciones</h1>
+        <h1 id="donaciones-title">Donaciones</h1>
         <p>
           💖 ¡Ayúdanos a Crecer! 💖<br/><br/>
           💙 ¡Apóyanos! 💙<br/><br/>
