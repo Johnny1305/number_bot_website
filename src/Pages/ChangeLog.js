@@ -17,6 +17,14 @@ const ChangelogComponent = () => {
             <div className="changelog-container">
                 <div className="folder">
                     <div className="tabs">
+                    <button
+                            className={`tab ${activeTab === "tab-0.5.0" ? "active" : ""}`}
+                            onClick={(e) => openTab(e, "tab-0.5.0")}
+                        >
+                            <div>
+                                <span>Versión 0.5.0</span>
+                            </div>
+                        </button>
                         <button
                             className={`tab ${activeTab === "tab-0.4.0" ? "active" : ""}`}
                             onClick={(e) => openTab(e, "tab-0.4.0")}
@@ -52,6 +60,21 @@ const ChangelogComponent = () => {
                     </div>
 
                     <div className="content">
+                    <div id="tab-0.5.0" className={`content__inner ${activeTab === "tab-0.5.0" ? "active" : ""}`}>
+                            <div className="page">
+                                <ul>
+                                    <li>Se implementaron los siguientes nuevos comandos:</li>
+                                    <ul>
+                                        <li><code>/kick</code>: Expulsa a un miembro del Servidor en el que está unido.</li>
+                                        <li><code>/ban</code>: Banea a un miembro del Servidor en el que está unido.</li>
+                                        <li><code>/unban</code>: Desbanea a un miembro del Servidor en el que está unido.</li>
+                                    </ul>
+                                    <li>Se ha actualizado el comando <code>-play</code> para que el bot no se desplace de canal de voz en el que está conectado.</li>
+                                    <li>Se han realizado mejoras en varios comandos existentes para mejorar su funcionalidad y usabilidad.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                         <div id="tab-0.4.0" className={`content__inner ${activeTab === "tab-0.4.0" ? "active" : ""}`}>
                             <div className="page">
                                 <ul>
