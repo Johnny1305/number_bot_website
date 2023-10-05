@@ -60,7 +60,7 @@ const DeveloperComponent = () => {
           Cada pequeña contribución cuenta y nos ayuda a brindarte una experiencia aún mejor. Tu apoyo significa el mundo para nosotros.<br/><br/>
           ¡Gracias por ser parte de nuestra comunidad y por considerar hacer una donación! 💙
         </p>
-        <a href={`href:${paypal}`} className="contact-button" target="_blank">
+        <a href={`${paypal}`} className="contact-button" target="_blank">
           Donar
         </a>
       </div>
