@@ -17,7 +17,7 @@ const DeveloperComponent = () => {
         </a>
 
         <hr/>
-
+    
         <h1>Donaciones</h1>
         <p>
           💖 ¡Ayúdanos a Crecer! 💖<br/><br/>
