@@ -4,6 +4,7 @@ import "../css/Developer.css"; // Asegúrate de ajustar la ruta a tu archivo CSS
 
 const DeveloperComponent = () => {
   const contactEmail = "jonathan.ramos.business@gmail.com"; // Reemplaza con tu dirección de correo electrónico
+  const paypal = "https://www.paypal.com/paypalme/johnny1305"
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -36,7 +37,7 @@ const DeveloperComponent = () => {
         <p>
           ¡Gracias por tu interés en contribuir al desarrollo de Number_Bot! <br/> Si deseas colaborar, enviar sugerencias o informar sobre problemas, no dudes en ponerte en contacto con el equipo de desarrollo.
         </p>
-        <a href={`mailto:${contactEmail}`} className="contact-button">
+        <a href={`mailto:${contactEmail}`} className="contact-button" target="_blank">
           Contactar por correo
         </a>
         <br/>
@@ -59,6 +60,9 @@ const DeveloperComponent = () => {
           Cada pequeña contribución cuenta y nos ayuda a brindarte una experiencia aún mejor. Tu apoyo significa el mundo para nosotros.<br/><br/>
           ¡Gracias por ser parte de nuestra comunidad y por considerar hacer una donación! 💙
         </p>
+        <a href={`href:${paypal}`} className="contact-button" target="_blank">
+          Donar
+        </a>
       </div>
     </div>
   );
