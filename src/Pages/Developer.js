@@ -15,7 +15,7 @@ const DeveloperComponent = () => {
         <a href={`mailto:${contactEmail}`} className="contact-button">
           Contactar por correo
         </a>
-
+        <br/>
         <hr/>
     
         <h1>Donaciones</h1>
