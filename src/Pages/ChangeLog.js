@@ -3,7 +3,7 @@ import MotionHoc from "./MotionHoc";
 import "../css/ChangeLog.css"; // Importa los estilos CSS
 
 const ChangelogComponent = () => {
-    const [activeTab, setActiveTab] = useState("tab-0.4.0");
+    const [activeTab, setActiveTab] = useState("tab-0.5.0");
 
     const openTab = (event, tabId) => {
         event.preventDefault();
@@ -26,7 +26,7 @@ const ChangelogComponent = () => {
                             </div>
                         </button>
                         <button
-                            className={`tab ${activeTab === "tab-0.4.0" ? "" : ""}`}
+                            className={`tab ${activeTab === "tab-0.4.0" ? "active" : ""}`}
                             onClick={(e) => openTab(e, "tab-0.4.0")}
                         >
                             <div>
