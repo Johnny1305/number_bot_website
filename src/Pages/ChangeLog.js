@@ -18,8 +18,8 @@ const ChangelogComponent = () => {
                 <div className="folder">
                     <div className="tabs">
                     <button
-                            className={`tab ${activeTab === "tab-0.5.0" ? "active" : ""}`}
-                            onClick={(e) => openTab(e, "tab-0.5.0")} active
+                            className={`tab ${activeTab === "tab-0.5.0" ? "active" : "active"}`}
+                            onClick={(e) => openTab(e, "tab-0.5.0")}
                         >
                             <div>
                                 <span>Versión 0.5.0</span>
