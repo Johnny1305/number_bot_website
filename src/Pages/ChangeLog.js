@@ -60,7 +60,7 @@ const ChangelogComponent = () => {
                     </div>
 
                     <div className="content">
-                    <div id="tab-0.5.0" className={`content__inner ${activeTab === "tab-0.5.0" ? "active" : ""}`}>
+                    <div id="tab-0.5.0"  active className={`content__inner ${activeTab === "tab-0.5.0" ? "active" : ""}`}>
                             <div className="page">
                                 <ul>
                                     <li>Se implementaron los siguientes nuevos comandos:</li>
