@@ -123,7 +123,6 @@ const ChangelogComponent = () => {
                                     </ul>
                                     <li>Se mejoró significativamente el rendimiento del bot.</li>
                                     <li>Se implementaron respuestas automáticas para una experiencia de usuario mejorada.</li>
-                                    <li>Se añadió la nueva página web del bot en https://lnkd.in/dSgPp64y.</li>
                                 </ul>
                             </div>
                         </div>
