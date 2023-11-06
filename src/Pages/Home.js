@@ -3,36 +3,38 @@ import MotionHoc from "./MotionHoc";
 import "../css/Home.css"; 
 
 const HomeContent = () => {
-  const [botStatus, setBotStatus] = useState("Desconocido"); // Estado inicial desconocido
+  const [botStatus, setBotStatus] = useState("Desconocido");
 
   useEffect(() => {
-    // Esta función simulada obtiene el estado del bot desde una API.
-    const getBotStatus = async () => {
+    const checkBotStatus = async () => {
       try {
-        const botToken = 'MTE1MDcyMjkyMDUyODc0MDQzNQ.G88yGW.jItIUYl1qxIHTiivwgUCK7oEeK9lP0txZ7wTlc';
+        // Aquí deberás implementar la lógica para obtener información sobre el bot desde la Discord API.
+        // Puedes usar la URL de la Discord API adecuada y proporcionar el token de bot en el encabezado "Authorization".
+
+        const botToken = 'MTE1MDcyMjkyMDUyODc0MDQzNQ.G88yGW.jItIUYl1qxIHTiivwgUCK7oEeK9lP0txZ7wTlc'; // Reemplaza con tu token de bot
         const response = await fetch('https://discord.com/api/v10/users/@me', {
           headers: {
             Authorization: `Bot ${botToken}`,
           },
         });
-    
+
         if (response.ok) {
           const data = await response.json();
-          // El estado del bot podría estar en la respuesta, dependiendo de cómo esté estructurada.
-          const botStatus = data.bot ? "Activo" : "Desconectado"; // Ejemplo simplificado
-          setBotStatus(botStatus);
+          if (data.bot) {
+            setBotStatus("Activo");
+          } else {
+            setBotStatus("Desconectado");
+          }
         } else {
-          setBotStatus("Desconocido"); // En caso de error
+          setBotStatus("Desconocido");
         }
       } catch (error) {
         console.error("Error al obtener el estado del bot:", error);
         setBotStatus("Desconocido");
       }
     };
-    
 
-    // Llamamos a la función para obtener el estado del bot cuando el componente se monta.
-    getBotStatus();
+    checkBotStatus();
   }, []);
 
   const inviteLink = "https://numberbot.johnnyportfolio.x10.mx/invite";
