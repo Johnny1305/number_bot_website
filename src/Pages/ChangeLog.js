@@ -22,7 +22,7 @@ const ChangelogComponent = () => {
                             onClick={(e) => openTab(e, "tab-0.6.0")}
                         >
                             <div>
-                                <span>Versión 0.5.0</span>
+                                <span>Versión 0.6.0</span>
                             </div>
                         </button>
                         <button
