@@ -11,19 +11,19 @@ const CommandsComponent = () => {
         {
             category: "General",
             commands: [
-                { name: "/ping", description: "Muestra la latencia del Bot" },
-                { name: "/info", description: "Muestra los datos del Bot e Información del Desarrollador" },
-                { name: "/userinfo", description: "Muestra información detallada del usuario" },
-                { name: "/invite", description: "Obtén un enlace para invitar al bot a tu servidor" },
-                { name: "/cualesmiip", description: "Muestra la dirección IP pública del usuario. (Mensaje Personal)" },
+                { name: "-ping", description: "Muestra la latencia del Bot" },
+                { name: "-info", description: "Muestra los datos del Bot e Información del Desarrollador" },
+                { name: "-userinfo", description: "Muestra información detallada del usuario" },
+                { name: "-invite", description: "Obtén un enlace para invitar al bot a tu servidor" },
+                { name: "-cualesmiip", description: "Muestra la dirección IP pública del usuario. (Mensaje Personal)" },
                 { name: "-avatar", description: "Muestra la foto de perfil del usuario" }
             ],
         },
         {
             category: "Interactivos",
             commands: [
-                { name: "/hug", description: "Manda un abrazo a un usuario" },
-                { name: "/kiss", description: "Manda un beso a un usuario" },
+                { name: "-hug", description: "Manda un abrazo a un usuario" },
+                { name: "-kiss", description: "Manda un beso a un usuario" },
             ],
         },
         {

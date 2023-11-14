@@ -17,7 +17,15 @@ const ChangelogComponent = () => {
             <div className="changelog-container">
                 <div className="folder">
                     <div className="tabs">
-                    <button
+                        <button
+                            className={`tab ${activeTab === "tab-0.6.0" ? "active" : ""}`}
+                            onClick={(e) => openTab(e, "tab-0.6.0")}
+                        >
+                            <div>
+                                <span>Versión 0.5.0</span>
+                            </div>
+                        </button>
+                        <button
                             className={`tab ${activeTab === "tab-0.5.0" ? "active" : ""}`}
                             onClick={(e) => openTab(e, "tab-0.5.0")}
                         >
@@ -60,7 +68,27 @@ const ChangelogComponent = () => {
                     </div>
 
                     <div className="content">
-                    <div id="tab-0.5.0" className={`content__inner ${activeTab === "tab-0.5.0" ? "active" : ""}`}>
+                        <div id="tab-0.6.0" className={`content__inner ${activeTab === "tab-0.6.0" ? "active" : ""}`}>
+                            <div className="page">
+                                <ul>
+                                    <li>Se han actualizado los comandos existentes.</li>
+                                    <li>Se ha implementado un sistema de Sugerencias:</li>
+                                    <ul>
+                                        <li><code>-setup-sugerencia</code>: Define un canal para crear el sistema de sugerencias.</li>
+                                    </ul>
+                                    <li>Se ha implemtado el sistema de Warning</li>
+                                    <ul>
+                                        <li><code>-warn</code>: Envia un aviso a un usuario del Servidor.</li>
+                                        <li><code>-warning</code>: Se muestra una lista paginada de todos los warns que tiene un usuario.</li>
+                                        <li><code>-unwarn</code>: Quita un warn que tiene un usuario.</li>
+                                    </ul>
+                                    <li>Se ha agregado el comando <code>-prefix</code> que permite cambiar el prefijo del bot en el servidor.</li>
+                                    <li>También se ha agregado el comando <code>-help</code> que muestre un panel de ayuda sobre los comandos.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="tab-0.5.0" className={`content__inner ${activeTab === "tab-0.5.0" ? "active" : ""}`}>
                             <div className="page">
                                 <ul>
                                     <li>Se implementaron los siguientes nuevos comandos:</li>
@@ -99,9 +127,9 @@ const ChangelogComponent = () => {
                                 <ul>
                                     <li>Se implementaron los siguientes nuevos comandos:</li>
                                     <ul>
-                                        <li>/invite: Obtén un enlace para invitar al bot a tu servidor.</li>
-                                        <li>/hug: Manda un abrazo a un usuario.</li>
-                                        <li>/kiss: Manda un beso a un usuario.</li>
+                                        <li>-invite: Obtén un enlace para invitar al bot a tu servidor.</li>
+                                        <li>-hug: Manda un abrazo a un usuario.</li>
+                                        <li>-kiss: Manda un beso a un usuario.</li>
                                         <li>-dado: Lanza un dado al azar.</li>
                                         <li>-avatar: Muestra la foto de perfil del usuario.</li>
                                     </ul>
@@ -117,8 +145,8 @@ const ChangelogComponent = () => {
                                 <ul>
                                     <li>Se implementaron los siguientes nuevos comandos:</li>
                                     <ul>
-                                        <li>/userinfo: Muestra información detallada del usuario.</li>
-                                        <li>/cualesmiip: Muestra la dirección IP pública del usuario. (Mensaje Personal)</li>
+                                        <li>-userinfo: Muestra información detallada del usuario.</li>
+                                        <li>-cualesmiip: Muestra la dirección IP pública del usuario. (Mensaje Personal)</li>
                                         <li>/clear (solo para administradores): Permite borrar mensajes en el servidor.</li>
                                     </ul>
                                     <li>Se mejoró significativamente el rendimiento del bot.</li>
@@ -133,8 +161,8 @@ const ChangelogComponent = () => {
                                     <li>Lanzamiento inicial del bot.</li>
                                     <li>Se agregaron comandos básicos:</li>
                                     <ul>
-                                        <li>/info: Muestra los datos del Bot e Información del Desarrollador.</li>
-                                        <li>/ping: Muestra la latencia del Bot.</li>
+                                        <li>-info: Muestra los datos del Bot e Información del Desarrollador.</li>
+                                        <li>-ping: Muestra la latencia del Bot.</li>
                                     </ul>
                                 </ul>
                             </div>
