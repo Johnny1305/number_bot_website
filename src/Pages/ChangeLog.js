@@ -83,14 +83,14 @@ const ChangelogComponent = () => {
                                     <li>Se han actualizado los comandos existentes para mayor accesibilidad y rapidez.</li>
                                     <li>Se ha agrega nuevos Sistemas:</li>
                                     <ul>
-                                        <li>`-setup-bienvenida`: Configura el sistema de Bienvenida, personalizar el fondo y colores del mismo.</li>
-                                        <li>`-setup-tickets`: Configura el sistema de Tickets, define el canal para crear los tickets de los usuario.</li>
-                                        <li>`-setup-nivel`: Configura el sistema de Niveles, donde se puede definir en que canal se va a enviar un mensaje cuando el usuario sube de nivel.</li>
+                                        <li><code>-setup-bienvenida</code>: Configura el sistema de Bienvenida, personalizar el fondo y colores del mismo.</li>
+                                        <li><code>-setup-tickets</code>: Configura el sistema de Tickets, define el canal para crear los tickets de los usuario.</li>
+                                        <li><code>-setup-nivel</code>: Configura el sistema de Niveles, donde se puede definir en que canal se va a enviar un mensaje cuando el usuario sube de nivel.</li>
                                     </ul>
-                                    <li>Comando `-nivel`, que muestra el nivel que tiene el usuario.</li>
+                                    <li>Comando <code>-nivel</code>, que muestra el nivel que tiene el usuario.</li>
                                     <li>Se ha actualizado el sistema de ayuda donde el bot envía un mensaje al DM del usuario para solucionar los posibles problemas del mismo.</li>
-                                    <li>Se ha agregado el comando `-chiste`, donde se envía un chiste al azar.</li>
-                                    <li>Se ha agregado el comando `-8ball`, donde se envía una respuesta al azar de la pregunta.</li>
+                                    <li>Se ha agregado el comando <code>-chiste</code>, donde se envía un chiste al azar.</li>
+                                    <li>Se ha agregado el comando <code>-8ball</code>, donde se envía una respuesta al azar de la pregunta.</li>
                                 </ul>
                             </div>
                         </div>
