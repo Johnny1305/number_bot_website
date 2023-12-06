@@ -3,7 +3,7 @@ import MotionHoc from "./MotionHoc";
 import "../css/Home.css"; 
 
 const HomeContent = () => {
-  const inviteLink = "https://numberbot.johnnyportfolio.x10.mx/invite";
+  const inviteLink = "https://dsc.gg/numberbot-server";
   return (
     <div className="home-content">
       <div className="logo-circle">
@@ -17,7 +17,7 @@ const HomeContent = () => {
       <p>¡Bienvenido al bot Number_Bot! <br/> Puedes usar este bot para realizar moderaciones y controles es tu servidor de Discord. <br/> ¡Explora las funciones disponibles en el menú de la izquierda!</p>
       <br/>
       <a href={inviteLink} target="_blank" rel="noopener noreferrer" className="invite-button">
-        Invítame
+        Join the official server
       </a>
     </div>
   );
