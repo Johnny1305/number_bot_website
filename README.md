@@ -10,20 +10,6 @@
 <p></p>
 <p></p>
 
-## 🔍 Table of Contents
-
-* [💻 Stack](#stack)
-
-* [📝 Project Summary](#project-summary)
-
-* [⚙️ Setting Up](#setting-up)
-
-* [🚀 Run Locally](#run-locally)
-
-* [🙌 Contributors](#contributors)
-
-* [📄 License](#license)
-
 ## 💻 Stack
 
 - [react](https://reactjs.org/): JavaScript library for building user interfaces.
@@ -45,14 +31,6 @@
 - [**public**](public): Holds the public files of the project, like the HTML file and favicon.
 
 
-## ⚙️ Setting Up
-
-#### Your Environment Variable
-
-- Step 1
-
-- Step 2
-
 ## 🚀 Run Locally
 1.Clone the number_bot_website repository:
 ```sh
@@ -60,17 +38,11 @@ git clone https://github.com/Johnny1305/number_bot_website
 ```
 2.Install the dependencies with one of the package managers listed below:
 ```bash
-pnpm install
-bun install
 npm install
-yarn install
 ```
 3.Start the development mode:
 ```bash
-pnpm dev
-bun dev
 npm run dev
-yarn dev
 ```
 
 ## 🙌 Contributors
