@@ -15,7 +15,7 @@ function App() {
 
       <div className='banner' style={{backgroundImage: `url(${aedile_bg})`}}>
           <h1 className='banner__header'>Improve your server experience with NumberBot!</h1>
-          <a className='button' href="https://dsc.gg/numberbot-server" target='_blank'>Add to server</a>
+          <a className='button' href="https://dsc.gg/numberbot-server" target='_blank'>Join the Server</a>
       </div>
 
       <div className='landing-page'>
