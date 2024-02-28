@@ -50,7 +50,7 @@ function App() {
              It's easy and fast!
            </p>
           )}/>  
-          <FaqTile question='What moderation features does Number_Bot offer?' answer={`Number_Bot provides effective moderation tools, including warnings, bans, and bans to maintain a safe environment on your server.`}/>  
+          <FaqTile question='What moderation features does Number_Bot offer?' answer={`Number_Bot provides effective moderation tools, including warnings, bans to maintain a safe environment on your server.`}/>  
           <FaqTile question='When will Number_Bot be released globally?' answer={`We are hard at work developing Number_Bot and plan to launch it globally in late 2024. \n \n Stay tuned for more information!`}/>  
           <FaqTile question="How can I get technical support or make suggestions?" answer={`If you need technical help or want to share your suggestions and comments, please join our support server. Our team will be happy to help you and listen to your ideas.`}/>  
         </div>
