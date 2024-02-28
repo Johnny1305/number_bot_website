@@ -1,0 +1,25 @@
+.about-me {
+    &__text {
+        max-width: 400px;
+        font-size: 12px;
+        color: var(--color-text-200);
+    }
+
+    &__img {
+        position: absolute;
+        top: -5%;
+        left: -35%;
+        height: 125%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-me {
+
+        &__img {
+            top: -15%;
+            left: -45%;
+        }
+    }
+
+}

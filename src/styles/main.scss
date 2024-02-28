@@ -1,0 +1,139 @@
+@import './fonts.scss';
+@import './button.scss';
+@import './tile.scss';
+@import './faq-tile.scss';
+@import './root.scss';
+@import './about-me.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+body {
+    background: var(--neutral-color-800);
+    color: var(--color-text-100);
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-page-navbar {
+    width: 100%;
+    display: flex;
+    & &__logo {
+        margin: 16px;
+    }
+
+    & &__icons {
+        max-width: 60px;
+        display: flex;
+        justify-content: space-around;
+        margin: 16px;
+    }
+
+    
+    & &__icon {
+        margin: 0 4px;
+        padding: 8px;
+        border-radius: 8px;
+        
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 4px rgba($color: #565679, $alpha: 0.7);
+        }
+    }
+
+    &--footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.landing-page {
+    max-width: 1200px;
+    margin: 24px;
+
+    & &__subheader {
+        transition: all 0.3s;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 32px 0 16px 0;
+    }
+
+    & &__tiles-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    & &__about-me {
+        position: relative;
+        margin: 32px 0;
+    }
+}
+
+.banner {
+    padding: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 55vw;
+
+    & &__header {
+        max-width: 275px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 32px 0;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-page {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .landing-page {
+        max-width: 1200px;
+        margin: 24px;
+    
+        & &__subheader {
+            font-weight: 500;
+            font-size: 24px;
+        }
+    
+        & &__tiles-container {
+            flex-wrap: nowrap;
+        }
+
+        & &__about-me {
+            margin: 72px 0 72px 35% ;
+        }
+
+        & &__faq-tiles-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    .banner {
+        background-position-x: 40vw;
+    
+        & &__header {
+            max-width: 400px;
+            font-weight: 700;
+            font-size: 36px;
+        }
+    }
+}
