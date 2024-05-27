@@ -61,7 +61,6 @@ function App() {
         <img className='landing-page-navbar__logo' src={aedile_logo} />
         <div className='landing-page-navbar__icons'>
           <a className='landing-page-navbar__icon' href="https://github.com/Johnny1305" target="_blank"><img src={github} /></a>
-          <a className='landing-page-navbar__icon' href="https://dsc.gg/numberbot-server" target="_blank"><img src={discord} /></a>
         </div>
       </div>
 
