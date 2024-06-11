@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import FaqTile from './components/FaqTile'
 import { Tile } from './components/Tile'
 import aedile_logo from './assets/OIG2.svg'
@@ -7,6 +7,7 @@ import github from './assets/github.svg'
 import discord from './assets/discord.svg'
 import website from './assets/website.svg'
 import './styles/main.scss'
+import FutureUpdates from './components/FutureUpdates';
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
           <img className='about-me__img' src={aedile_bg} />
         </div>
 
+        <h2 className='landing-page__subheader'>Future Updates</h2>
+        <FutureUpdates/>
+
         <h2 className='landing-page__subheader'>FAQ</h2>
 
         <div className='landing-page__faq-tiles-container'>
@@ -66,6 +70,4 @@ function App() {
 
     </div>
   )
-}
-
-export default App
+} export default App;

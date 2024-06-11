@@ -4,6 +4,7 @@
 @import './faq-tile.scss';
 @import './root.scss';
 @import './about-me.scss';
+@import './actualizaciones.scss';
 
 * {
     margin: 0;
@@ -77,6 +78,22 @@ body {
     & &__about-me {
         position: relative;
         margin: 32px 0;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    & &__actualizaciones {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    & &__actualizacion {
+        max-width: 0 !important;
     }
 }
 
