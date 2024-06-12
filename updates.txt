@@ -1,8 +1,0 @@
-FORMATO DEL ARCHIVO UPDATES.JSON
-
-{
-    "updates": [
-        { "text": "se modifica el bot completo", "complete": true },
-        { "text": "otra actualizacion", "complete": true }
-    ]
-}
