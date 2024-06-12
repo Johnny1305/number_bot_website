@@ -4,17 +4,26 @@ const FutureUpdates = () => {
     const [updates, setUpdates] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const fetchUpdates = async () => {
+        try {
+            const response = await fetch('/updates.json');
+            const data = await response.json();
+            setUpdates(data.updates);
+            setLoading(false);
+        } catch (error) {
+            console.error('Error fetching updates:', error);
+            setLoading(false);
+        }
+    };
+
     useEffect(() => {
-        fetch('/updates.json')
-            .then(response => response.json())
-            .then(data => {
-                setUpdates(data.updates);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error('Error fetching updates:', error);
-                setLoading(false);
-            });
+        fetchUpdates();
+
+        const interval = setInterval(() => {
+            fetchUpdates();
+        }, 60000); // Verificar cada 60 segundos
+
+        return () => clearInterval(interval); // Limpiar intervalo al desmontar el componente
     }, []);
 
     return (
