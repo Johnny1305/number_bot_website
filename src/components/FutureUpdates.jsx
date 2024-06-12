@@ -23,10 +23,12 @@ const FutureUpdates = () => {
                 <p>Loading...</p>
             ) : updates.length > 0 ? (
                 updates.map((update, index) => (
-                    <p key={index}>✅ {update}</p>
+                    <p key={index}>
+                        {update.complete ? '✅' : '❌'} {update.text}
+                    </p>
                 ))
             ) : (
-                <p>✅ There are no updates</p>
+                <p>❌ There are no updates</p>
             )}
         </div>
     );
