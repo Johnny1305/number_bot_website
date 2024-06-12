@@ -43,16 +43,17 @@ function App() {
         </div>
 
         <h2 className='landing-page__subheader'>Future Updates</h2>
-        <FutureUpdates/>
+        <FutureUpdates />
 
         <h2 className='landing-page__subheader'>FAQ</h2>
 
         <div className='landing-page__faq-tiles-container'>
           <FaqTile question='How can I invite Number_Bot to my server?' answer={(
             <p>
-              To invite Number_Bot to your server, simply use this
-              <a href="https://dsc.gg/numberbot-server" target="_blank" rel="noopener noreferrer"> invite link</a> and follow the instructions provided.
-              It's easy and fast!
+              Number_Bot is currently in beta and cannot be added to personal servers.<br/>
+              However, you can access its features and try it out by joining our
+              <a href="https://dsc.gg/numberbot-server" target="_blank" rel="noopener noreferrer"> official server</a>.<br/>
+              Here you will be able to interact with the bot, provide feedback and stay informed about future updates.
             </p>
           )} />
           <FaqTile question='What moderation features does Number_Bot offer?' answer={`Number_Bot provides effective moderation tools, including warnings, bans to maintain a safe environment on your server.`} />
@@ -61,14 +62,14 @@ function App() {
         </div>
 
       </div>
-      <LogoNumber/>
+      <LogoNumber />
       <div className='landing-page-navbar landing-page-navbar--footer'>
         <img className='landing-page-navbar__logo' src={aedile_logo} />
         <div className='landing-page-navbar__icons'>
           <a className='landing-page-navbar__icon' href="https://github.com/Johnny1305" target="_blank"><img src={github} /></a>
         </div>
       </div>
-      
+
 
     </div>
   )
