@@ -1,0 +1,40 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Estilos para la imagen del logo
+    &__logo {
+        width: 50vw; // El ancho del logo es el 20% del ancho de la ventana
+        height: auto;
+        border: 2px solid #000; // Borde negro de 2px
+        border-radius: 10px; // Bordes redondeados
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra ligera
+        transition: transform 0.3s ease; // Transición suave
+    }
+
+    // Media queries para diferentes tamaños de pantalla
+    @media (max-width: 1200px) {
+        &__logo {
+            width: 50vw; // Ajusta el tamaño en función del ancho de la ventana
+        }
+    }
+
+    @media (max-width: 992px) {
+        &__logo {
+            width: 50vw;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__logo {
+            width: 50vw;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__logo {
+            width: 50vw;
+        }
+    }
+}

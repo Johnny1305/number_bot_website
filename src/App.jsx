@@ -8,6 +8,7 @@ import discord from './assets/discord.svg'
 import website from './assets/website.svg'
 import './styles/main.scss'
 import FutureUpdates from './components/FutureUpdates';
+import LogoNumber from './components/Logo';
 
 function App() {
 
@@ -60,13 +61,14 @@ function App() {
         </div>
 
       </div>
-
+      <LogoNumber/>
       <div className='landing-page-navbar landing-page-navbar--footer'>
         <img className='landing-page-navbar__logo' src={aedile_logo} />
         <div className='landing-page-navbar__icons'>
           <a className='landing-page-navbar__icon' href="https://github.com/Johnny1305" target="_blank"><img src={github} /></a>
         </div>
       </div>
+      
 
     </div>
   )

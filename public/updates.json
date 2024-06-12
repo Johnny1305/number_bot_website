@@ -1,6 +1,6 @@
 {
     "updates": [
         { "text": "Create 'help' command in Slash.", "complete": false },
-        { "text": "Convert commands 'unwarn', 'warn', 'warning', 'queue', 'setup-welcome' from prefix to slash commands", "complete": false }
+        { "text": "Convert commands 'unwarn', 'warn', 'warning', 'queue', 'setup-welcome' from prefix to Slash Commands", "complete": false }
     ]
 }
