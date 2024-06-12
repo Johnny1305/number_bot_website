@@ -9,5 +9,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      useEffect(() => {
+    const handleVisibilityChange = () => {
+      document.title = document.visibilityState === 'visible' ? 'Welcome back!' : 'Título predeterminado';
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+    </script>
   </body>
 </html>
