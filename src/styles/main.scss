@@ -27,6 +27,7 @@ body {
 .landing-page-navbar {
     width: 100%;
     display: flex;
+
     & &__logo {
         margin: 16px;
     }
@@ -38,12 +39,12 @@ body {
         margin: 16px;
     }
 
-    
+
     & &__icon {
         margin: 0 4px;
         padding: 8px;
         border-radius: 8px;
-        
+
         &:hover {
             transform: scale(1.1);
             box-shadow: 0px 0px 4px rgba($color: #565679, $alpha: 0.7);
@@ -119,18 +120,18 @@ body {
     .landing-page {
         max-width: 1200px;
         margin: 24px;
-    
+
         & &__subheader {
             font-weight: 500;
             font-size: 24px;
         }
-    
+
         & &__tiles-container {
             flex-wrap: nowrap;
         }
 
         & &__about-me {
-            margin: 72px 0 72px 35% ;
+            margin: 72px 0 72px 35%;
         }
 
         & &__faq-tiles-container {
@@ -143,11 +144,33 @@ body {
 
     .banner {
         background-position-x: 40vw;
-    
+
         & &__header {
             max-width: 400px;
             font-weight: 700;
             font-size: 36px;
         }
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    /* Centrado vertical */
+    font-size: 1rem;
+    /* Tamaño de fuente relativo */
+
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .copyright {
+        font-size: 0.8rem;
+        /* Ajuste adicional de tamaño de fuente para pantallas muy pequeñas */
     }
 }

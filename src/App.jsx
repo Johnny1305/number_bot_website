@@ -11,6 +11,7 @@ import FutureUpdates from './components/FutureUpdates';
 import LogoNumber from './components/Logo';
 
 function App() {
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className='home-page'>
@@ -65,6 +66,9 @@ function App() {
       <LogoNumber />
       <div className='landing-page-navbar landing-page-navbar--footer'>
         <img className='landing-page-navbar__logo' src={aedile_logo} />
+        <span className='copyright'>
+          &copy; {currentYear} | All rights reserved
+        </span>
         <div className='landing-page-navbar__icons'>
           <a className='landing-page-navbar__icon' href="https://github.com/Johnny1305" target="_blank"><img src={github} /></a>
         </div>
